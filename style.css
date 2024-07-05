@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100svh;
+    line-height: 1.7;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9cc3e3;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button {
+    font-family: "Poppins";
+    border: none;
+}
+
+.contraction-card {
+    background-color: #fff;
+    width: min(80%, 30rem);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 2em;
+}
+
+.top-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 22lvh;
+}
+
+.diff-btn {
+    font-size: 16px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 18px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:414px) {
+    .icon {
+        display: none;
+    }
+
+    .contraction-card h3 {
+        margin-inline: auto;
+    }
+
+    .main-section {
+        text-align: center;
+    }
+}
