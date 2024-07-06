@@ -7,7 +7,7 @@
 }
 
 body {
-    min-height: 100svh;
+    min-height: 100vh;
     line-height: 1.7;
     font-family: "Poppins";
     display: flex;
@@ -36,10 +36,6 @@ button {
     background-color: #fff;
     width: min(80%, 30rem);
     border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
     padding: 2em;
 }
 
@@ -54,23 +50,29 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 22lvh;
+    min-height: 22vh;
 }
 
 .diff-btn {
     font-size: 16px;
     border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
     background-color: #000;
     color: #fff;
     padding: 10px 18px;
     margin-top: 15px;
 }
 
-@media screen and (max-width:414px) {
+.icon {
+    font-size: 20px;
+}
+
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media screen and (max-width: 414px) {
     .icon {
         display: none;
     }

@@ -3,33 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Contraction Timer</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="language-selector">
+            <label for="language">Choose Language:</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <!-- Add more languages as needed -->
+            </select>
+        </div>
+
         <div class="contraction-card">
             <div class="top-side">
                 <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
-                <h3>Contraction Timer</h3>
+                <h3 data-lang-en="Contraction Timer"
+                    data-lang-es="Temporizador de Contracciones"
+                    data-lang-fr="Minuteur de Contractions">Contraction
+                    Timer</h3>
                 <ion-icon class="icon" name="alarm-outline"></ion-icon>
             </div>
             <div class="main-section">
                 <h1>00:00:00</h1>
-                <p>Time since last contractions</p>
-                <strong>0 min 0 sec</strong>
-                <button class="diff-btn">Start Timing</button>
+                <p data-lang-en="Time since last contractions"
+                    data-lang-es="Tiempo desde la última contracción"
+                    data-lang-fr="Temps depuis la dernière contraction">Time
+                    since last contractions</p>
+                <p
+                    data-lang-en="with a width of 5px around the image to create an outline effect. The outline-offset property is set to 10px, which moves the outline away from the edge of the image by 10px. This advanced CSS property is useful when you want to create an outline effect around an element without affecting the layout or positioning of other elements. CSS blend modes in web design refer to mixing two or more colors to create a new color. In art design, this is achieved by using the color property and various CSS color functions, such as RGB, HSL, and HEX, to specify the colors to be blended. In CSS, color blending can be achieved using the mix-blend-mode and background-blend-mode property, which specifies how an element’s content should blend with its background."
+                    data-lang-es="con un ancho de 5px alrededor de la imagen para crear un efecto de contorno. La propiedad outline-offset se establece en 10px, lo que mueve el contorno lejos del borde de la imagen por 10px. Esta propiedad avanzada de CSS es útil cuando desea crear un efecto de contorno alrededor de un elemento sin afectar la disposición o posición de otros elementos. Los modos de mezcla de CSS en el diseño web se refieren a mezclar dos o más colores para crear un nuevo color. En el diseño artístico, esto se logra utilizando la propiedad de color y varias funciones de color de CSS, como RGB, HSL y HEX, para especificar los colores que se mezclarán. En CSS, la mezcla de colores se puede lograr utilizando la propiedad mix-blend-mode y background-blend-mode, que especifica cómo el contenido de un elemento debe mezclarse con su fondo."
+                    data-lang-fr="avec une largeur de 5px autour de l'image pour créer un effet de contour. La propriété outline-offset est définie à 10px, ce qui déplace le contour loin du bord de l'image de 10px. Cette propriété CSS avancée est utile lorsque vous souhaitez créer un effet de contour autour d'un élément sans affecter la disposition ou le positionnement des autres éléments. Les modes de fusion CSS en conception Web font référence au mélange de deux couleurs ou plus pour créer une nouvelle couleur. En design artistique, cela est réalisé en utilisant la propriété de couleur et diverses fonctions de couleur CSS, telles que RGB, HSL et HEX, pour spécifier les couleurs à mélanger. En CSS, le mélange des couleurs peut être réalisé en utilisant la propriété mix-blend-mode et background-blend-mode, qui spécifie comment le contenu d'un élément doit se fondre avec son arrière-plan.">with
+                    a width of 5px around the image to create an outline effect.
+                    The outline-offset property is set to 10px, which moves the
+                    outline away from the edge of the image by 10px. This
+                    advanced CSS property is useful when you want to create an
+                    outline effect around an element without affecting the
+                    layout or positioning of other elements. CSS blend modes in
+                    web design refer to mixing two or more colors to create a
+                    new color. In art design, this is achieved by using the
+                    color property and various CSS color functions, such as RGB,
+                    HSL, and HEX, to specify the colors to be blended. In CSS,
+                    color blending can be achieved using the mix-blend-mode and
+                    background-blend-mode property, which specifies how an
+                    element’s content should blend with its background.</p>
+                <button class="diff-btn" data-lang-en="Start Timing"
+                    data-lang-es="Comenzar" data-lang-fr="Commencer">Start
+                    Timing</button>
             </div>
         </div>
+
         <script src="index.js"></script>
         <script type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
     </body>
 </html>
